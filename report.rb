@@ -3,9 +3,9 @@ require 'net/ssh'
 require 'pry'
 
 hosts = ForemanApi::Resources::Host.new({
-  :base_url => 'http://foreman.***REMOVED***',
-  :username => '***REMOVED***',
-  :password => '***REMOVED***'
+  :base_url => 'http://foreman.kris.cant.fire.me.',
+  :username => 'kalsux',
+  :password => 'poopypoopyyum'
 }).index({"search" => "os ~ redhat", "per_page" => 600})
 hosts[0]["results"].each do |host|
   output = ''

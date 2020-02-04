@@ -15,7 +15,7 @@ password = ask("Password: ") { |q| q.echo = false }
 hg = ForemanApi::Resources::Hostgroup.new(
   {
     :logger => log,
-    :base_url => 'http://foreman.***REMOVED***',
+    :base_url => 'http://foreman.mgmt.nweacolo.pvt',
     :username => username,
     :password => password,
     :per_page => 407
